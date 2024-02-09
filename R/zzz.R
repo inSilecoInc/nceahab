@@ -2,9 +2,15 @@
 #' @importFrom exactextractr exact_extract
 #' @importFrom fs path path_package
 #' @importFrom glue glue glue_sql
+#' @importFrom graphics box image layout lines mtext par points polygon 
+#' @importFrom graphics rect text xspline
+#' @importFrom grDevices colorRampPalette dev.off hcl png
+#' @importFrom stats filter na.omit quantile runif setNames
 #' @importFrom units set_units
+#' @importFrom utils data read.csv write.csv
 #' @importFrom whisker whisker.render
 #' @importFrom yaml yaml.load_file write_yaml read_yaml
+
 NULL
 
 # ------------------------------------------------------------------------------
