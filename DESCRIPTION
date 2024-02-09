@@ -1,7 +1,7 @@
 Package: nceadfo
-Type: Research compendium
+Type: Package
 Title: Research compendium for contribution agreement on the assessment of network cumulative effects of global changes on communities of the Scotian Shelf Bioregion
-Version: 1.0.0
+Version: 1.0.0.9000
 Authors@R: c(
     person(given   = "David",
            family  = "Beauchesne",
@@ -15,11 +15,11 @@ License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.1
 Depends: 
-    pipedat,
     R (>= 4.0)
 Imports: 
+    bookdown,
     data.table,
     dplyr,
     eaMethods,
@@ -27,23 +27,45 @@ Imports:
     fasterize,
     fs,
     glue,
+    graphics,
     graphicsutils,
+    grDevices,
     here,
     iEat,
+    latex2exp,
+    motifcensus,
+    magrittr,
     pipedat,
-    mapview,
+    plotrix,
+    purrr,
     randomForest,
     raster,
+    rcea,
+    RefManageR,
+    rmarkdown,
     sf,
     stars,
+    stats,
     stringr,
+    tidyr,
     units,
+    utils,
+    viridis,
     vroom,
     whisker,
-    yaml,
+    yaml
+Remotes:
+    david-beauchesne/iEat,
+    Ecosystem-Assessments/eaMethods,
+    Ecosystem-Assessments/motifcensus,
+    Ecosystem-Assessments/pipedat,
+    Ecosystem-Assessments/rcea,
+    inSileco/graphicsutils,
+    mitchelloharawild/icons
+Suggests:
+    btb,
+    mapview,
+    hexSticker,
+    magick,
     xaringan,
     xaringanExtra
-Remotes:
-    Ecosystem-Assessments/rcea
-    mitchelloharawild/icons
-
